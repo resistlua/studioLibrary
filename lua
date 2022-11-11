@@ -17,7 +17,7 @@ getgenv().rs = game:GetService('RunService')
 
 --// Settings //
 local library = {
-    title = 'Widget'
+    title = 'Widget',
 
     --// Not settings //
     flags = {}
