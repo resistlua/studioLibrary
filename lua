@@ -5,8 +5,6 @@
 --[[
 1.0
 
-Documentation
-
 ]]
 
 
@@ -19,7 +17,7 @@ getgenv().rs = game:GetService('RunService')
 
 --// Settings //
 local library = {
-    toggleKey  = Enum.KeyCode.Delete, -- Leave blank if you dont want any
+    title = 'Widget'
 
     --// Not settings //
     flags = {}
@@ -43,7 +41,7 @@ local main = create('Frame',{['Name'] = 'Main',['Parent'] = screenGui,['Size'] =
 local container = create('Frame',{['Name'] = 'Container',['Parent'] = main,['Size'] = UDim2.new(1, -8,1, -28),['BackgroundTransparency'] = 1,['BackgroundColor3'] = Color3.fromRGB(36, 36, 36),['BorderSizePixel'] = 0, ['BorderColor3'] = Color3.fromRGB(64,64,64),['AnchorPoint'] = Vector2.new(0,0),['Position'] = UDim2.new(0, 4,0, 24)})
 
 local top = create('Frame',{['Name'] = 'Top',['Parent'] = main,['Size'] = UDim2.new(1,0,0,20),['BackgroundColor3'] = Color3.fromRGB(53, 53, 53),['BorderSizePixel'] = 0, ['BorderColor3'] = Color3.fromRGB(64,64,64),['AnchorPoint'] = Vector2.new(0,0),['Position'] = UDim2.new(0,0,0,0)})
-local title = create('TextLabel',{['Name'] = 'Title',['Parent'] = top,['Size'] = UDim2.new(1,-32,1,-2),['BackgroundTransparency'] = 1,['TextColor3'] = Color3.fromRGB(204,204,204),['Text'] = title})
+local title = create('TextLabel',{['Name'] = 'Title',['Parent'] = top,['Size'] = UDim2.new(1,-32,1,-2),['BackgroundTransparency'] = 1,['TextColor3'] = Color3.fromRGB(204,204,204),['Text'] = library.title})
 local close = create('ImageButton',{['Name'] = 'Close',['AutoButtonColor'] = false,['Parent'] = top,['BackgroundColor3'] = Color3.fromRGB(80,80,80),['BackgroundTransparency'] = 1,['BorderSizePixel'] = 0,['Position'] = UDim2.new(1,-14,0.5,0),['AnchorPoint'] = Vector2.new(0,0.5),['ImageColor3'] = Color3.fromRGB(204,204,204),['Image'] = 'rbxassetid://11530278545',['Size'] = UDim2.new(0,10,0,10)})
 local minimize = create('ImageButton',{['Name'] = 'Minimize',['AutoButtonColor'] = false,['Parent'] = top,['BackgroundColor3'] = Color3.fromRGB(80,80,80),['BackgroundTransparency'] = 1,['BorderSizePixel'] = 0,['Position'] = UDim2.new(1,-28,0.5,0),['AnchorPoint'] = Vector2.new(0,0.5),['ImageColor3'] = Color3.fromRGB(204,204,204),['Image'] = 'rbxassetid://11530306783',['Size'] = UDim2.new(0,10,0,10)})
 
