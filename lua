@@ -36,7 +36,7 @@ end
 
 local screenGui = create('ScreenGui',{['Name'] = 'StudioLibrary',['Parent'] = game.CoreGui,['DisplayOrder'] = 10,['ResetOnSpawn'] = false,['IgnoreGuiInset'] = true})
 
-local main = create('Frame',{['Name'] = 'Main',['Parent'] = screenGui,['Size'] = UDim2.new(0,200,0,28),['BackgroundColor3'] = Color3.fromRGB(46,46,46),['BorderSizePixel'] = 4, ['BorderColor3'] = Color3.fromRGB(64,64,64),['AnchorPoint'] = Vector2.new(0,0),['Position'] = UDim2.new(0.1,0,0,30)})
+local main = create('Frame',{['Name'] = 'Main',['Parent'] = screenGui,['Size'] = UDim2.new(0,200,0,32),['BackgroundColor3'] = Color3.fromRGB(46,46,46),['BorderSizePixel'] = 4, ['BorderColor3'] = Color3.fromRGB(64,64,64),['AnchorPoint'] = Vector2.new(0,0),['Position'] = UDim2.new(0.1,0,0,30)})
 
 local container = create('Frame',{['Name'] = 'Container',['Parent'] = main,['Size'] = UDim2.new(1, -8,1, -28),['BackgroundTransparency'] = 1,['BackgroundColor3'] = Color3.fromRGB(36, 36, 36),['BorderSizePixel'] = 0, ['BorderColor3'] = Color3.fromRGB(64,64,64),['AnchorPoint'] = Vector2.new(0,0),['Position'] = UDim2.new(0, 4,0, 24)})
 
